@@ -32,18 +32,16 @@ public class CellPhoneApplication {
 
     //getters
 
+        display(myPhone);
+
+        display(oldPhone);
     }
 
-    public static void display(CellPhone cellPhone){
-        System.out.println("Serial number: "+ cellPhone.getSerialNumber());
-        System.out.println("Model: "+ cellPhone.getModel());
-        System.out.println("Carrier: "+ cellPhone.getCarrier());
-        System.out.println("Phone number: "+ cellPhone.getPhoneNumber());
-        System.out.println("Owner name: "+ cellPhone.getOwner());
+    public static void display(CellPhone phone){
+        System.out.println("Serial number: "+ phone.getSerialNumber());
+        System.out.println("Model: "+ phone.getModel());
+        System.out.println("Carrier: "+ phone.getCarrier());
+        System.out.println("Phone number: "+ phone.getPhoneNumber());
+        System.out.println("Owner name: "+ phone.getOwner());
     }
-
-    display(myPhone);
-
-    display(oldPhone);
-
 }
