@@ -38,6 +38,7 @@ public class CellPhoneApplication {
         display(olderPhone);
 
         oldPhone.dial(olderPhone.getPhoneNumber());
+        olderPhone.dial(oldPhone.getPhoneNumber());
     }
 
     public static void display(CellPhone phone){
