@@ -9,7 +9,8 @@ public class CellPhoneApplication {
     CellPhone myPhone = new CellPhone(0,"", "","", "");
     Scanner myScanner = new Scanner(System.in);
 
-    CellPhone oldPhone = new CellPhone(1203240047, "iPhone 13", "TMobile", "302-223-3393", "Amanda");
+    CellPhone olderPhone = new CellPhone(120052512, "iPhone 13", "TMobile", "302-223-3393", "Ama");
+    CellPhone oldPhone = new CellPhone(1203240047, "iPhone 16", "TMobile", "302-339-2233", "Amanda" );
     //inputs
     System.out.println("What is the serial number?");
     int mySerialNumber = myScanner.nextInt();
@@ -32,9 +33,11 @@ public class CellPhoneApplication {
 
     //getters
 
-        display(myPhone);
-
         display(oldPhone);
+
+        display(olderPhone);
+
+        oldPhone.dial(olderPhone.getPhoneNumber());
     }
 
     public static void display(CellPhone phone){
